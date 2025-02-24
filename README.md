@@ -1,24 +1,15 @@
 📋 Actividades Prácticas de React
 
-💡 1.Manejo del Estado y Contexto
+💡 1. Actividad: Creación y Uso de Context en React
 
-Objetivo: Aprender a usar useState, useEffect, y Context API.
+Objetivo: Aprender a crear un contexto global en React para compartir datos entre componentes y permitir su modificación desde distintos niveles del árbol de componentes.
 
-useState:
-
-Crea un formulario simple (nombre y edad) y almacena los datos usando useState.
-useEffect:
-
-Realiza una solicitud a una API pública (ej. https://jsonplaceholder.typicode.com/users) y muestra los datos.
-Agrega un loader mientras se cargan los datos.
-useContext:
-
-Crea un tema oscuro/claro usando Context.
-Permite al usuario alternar entre los temas con un botón.
-Prop Drilling:
-
-Crea una cadena de 3 componentes y pasa una prop desde el padre al último hijo.
-Refactoriza usando useContext para eliminar el paso intermedio.
+Requisitos del Proyecto:
+A. Crear un contexto llamado UserContext.
+B. Almacenar un objeto con la siguiente estructura inicial en el contexto nombre: "Invitado", edad: 0
+C. Mapear los valores del contexto en un componente UserDisplay para mostrarlos.
+D. Modificar los valores del contexto desde otro componente UserForm
+E. Al actualizar los datos desde UserForm, los cambios deben reflejarse automáticamente en UserDisplay.
 
 ---
 
@@ -106,4 +97,5 @@ useActionState:
 Crea un formulario que maneje los estados "enviando", "éxito" y "error" al hacer una solicitud asíncrona.
 
 ---
+
 # practicas-react
