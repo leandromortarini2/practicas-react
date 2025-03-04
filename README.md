@@ -39,22 +39,19 @@ Redirige al login si no hay autenticación.
 
 ---
 
-🔵 3. Formularios y Validaciones
+🔵 3. Formularios, Validaciones y manejo de LocalStorage.
 Objetivo: Dominar formularios controlados y su validación.
 
 Formulario controlado:
 
-Crea un formulario con campos: Nombre, Email y Mensaje.
+Crea un formulario con campos: Nombre e Email .
 Usa useState y onChange para actualizar el estado en tiempo real.
 Validación básica:
 
 Implementa una función de validación que muestre mensajes de error si los campos están vacíos o el email es inválido.
-Validación avanzada:
 
-Integra una librería como Formik o React Hook Form para validaciones más complejas.
-Uso de event.target.value:
+Simula el envio del formulario guardandolo en el local storage.
 
-## Crea una función que, en cada cambio, muestre en consola el nombre del campo editado y su valor actual.
 
 🟣 4. Axios y Manejo de APIs
 Objetivo: Aprender a consumir APIs y manejar errores.
