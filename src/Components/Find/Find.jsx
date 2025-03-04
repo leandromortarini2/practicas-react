@@ -7,7 +7,7 @@ export const Find = () => {
 
   const email = usuarios.find((item) => item.email === "ana@email.com");
   return (
-    <div className="boxContent">
+    <div className="section">
       <h1>Find</h1>
       <p>
         {email ? `${email.nombre} - ${email.email}` : "Usuario no encontrado"}

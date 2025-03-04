@@ -10,7 +10,7 @@ export const Some = () => {
   console.log("mayor", mayor);
 
   return (
-    <div className="boxContent">
+    <div className="section">
       <h1>Some</h1>
       <p>¿Hay al menos un mayor de edad? {mayor ? "Sí" : "No"}</p>
     </div>

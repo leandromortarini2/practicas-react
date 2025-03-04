@@ -17,7 +17,7 @@ export const Reduce = () => {
   const total = productos.reduce((acc, product) => acc + product.precio, 0);
 
   return (
-    <div className="boxContent">
+    <div className="section">
       <h1>Reduce</h1>
       <p>total: {total}</p>
     </div>

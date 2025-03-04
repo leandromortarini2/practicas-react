@@ -15,7 +15,7 @@ export const Map = () => {
   });
 
   return (
-    <div className="boxContent">
+    <div className="section">
       <h1>Map</h1>
       {productosConIVA.map((producto) => {
         return (

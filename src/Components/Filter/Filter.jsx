@@ -1,14 +1,15 @@
-/* eslint-disable react/prop-types */
-
-export const Filter = ({ productos }) => {
+export const Filter = () => {
+  const productos = [
+    { id: 1, nombre: "Remera", precio: 5000 },
+    { id: 2, nombre: "Pantalón", precio: 0 },
+    { id: 3, nombre: "Zapatillas", precio: 15000 },
+  ];
   const productosDisponibles = productos.filter((producto) => {
     return producto.precio > 0;
   });
 
-  console.log("productosDisponibles", productosDisponibles);
-
   return (
-    <div className="boxContent">
+    <div className="section">
       <h1>Filter</h1>
       <ul>
         {" "}

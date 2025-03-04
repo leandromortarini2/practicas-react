@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Every } from "./Components/Every/Every";
 import { Filter } from "./Components/Filter/Filter";
@@ -6,26 +7,27 @@ import { Map } from "./Components/Map/Map";
 
 import { Reduce } from "./Components/Reduce/Reduce";
 import { Some } from "./Components/Some/Some";
+import { Methods } from "./Pages/Methods/Methods";
+import { NavBar } from "./Components/NavBar/NavBar";
+import { Form } from "./Components/Form/Form";
 // import { Form } from "./Components/Form/Form";
 
 function App() {
-  const productos = [
-    { id: 1, nombre: "Remera", precio: 5000 },
-    { id: 2, nombre: "Pantalón", precio: 0 },
-    { id: 3, nombre: "Zapatillas", precio: 15000 },
-  ];
-
   return (
-    <div className="section">
-      {/* <h1 className="title">formulario</h1>
-      <Form /> */}
-      <Every />
-      <Filter productos={productos} />
-      <Find />
-      <Some />
-      <Reduce />
-      <Map />
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="method" element={<Methods />}>
+          <Route path="every" element={<Every />} />
+          <Route path="some" element={<Some />} />
+          <Route path="find" element={<Find />} />
+          <Route path="filter" element={<Filter />} />
+          <Route path="map" element={<Map />} />
+          <Route path="reduce" element={<Reduce />} />
+        </Route>
+        <Route path="formulario" element={<Form />} />
+      </Routes>
+    </>
   );
 }
 

@@ -6,7 +6,7 @@ export const Every = () => {
   ];
   const todosConStock = usuarios.every((usuario) => usuario.activo);
   return (
-    <div className="boxContent">
+    <div className="section">
       <h1>Every</h1>
       <p>
         ¿Todos los usuarios se encuentran activos? {todosConStock ? "Si" : "No"}
